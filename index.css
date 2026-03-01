@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Montserrat:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-display: "Cinzel", serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  --color-wine-900: #2a0a12;
+  --color-wine-800: #4a0e1c;
+  --color-wine-600: #721c2e;
+  --color-rose-500: #e11d48;
+  --color-rose-300: #fda4af;
+  --color-gold-400: #fbbf24;
+}
+
+body {
+  background-color: #0f0505;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a0508;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a0e1c;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s linear infinite;
+}
