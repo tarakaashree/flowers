@@ -4,7 +4,7 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/Flower/',   // 🔥 required for GitHub Pages
+  base: '/flowers/',   // 🔥 required for GitHub Pages
 
   plugins: [react(), tailwindcss()],
 
